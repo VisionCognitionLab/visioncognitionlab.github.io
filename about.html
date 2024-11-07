@@ -4,15 +4,20 @@ title: Overview
 ---
 
 <style>
-    .square {
-        color: #ff5100;
-        /* Orange-red color */
-        font-size: 1em;
-        /* Match the font size of the paragraph text */
-        vertical-align: middle;
-        /* Align the square with the middle of the text */
-        margin-right: 5px;
-        /* Add some space between the square and the text */
+    h2 {
+        display: inline-block;
+        position: relative;
+    }
+
+    h2::after {
+        content: "";
+        display: block;
+        height: 1px;
+        width: 80%;
+        background-color: #ff5100;
+        position: absolute;
+        left: 10%;
+        bottom: -5px;
     }
 </style>
 
@@ -20,7 +25,6 @@ title: Overview
 <h2 id="overview">Overview</h2>
 
 <p>
-<span class="square">&#9632;</span>
 We study high-level visual perception in the human brain, with a focus on ecologically relevant and meaningful vision:
 how do I know where I am in space? How fast do I and that ball move? What emotion does that person feel? Have I not
 seen this place/object/person before? Our studies include links to attention, memory and social interactions. We
@@ -35,7 +39,7 @@ multivariate classifiers and old-fashioned stats. Our research questions current
 
 <h2 id="illusions-scene-segmentation-and-attention">Illusions, scene segmentation, and attention</h2>
 
-<p><span class="square">&#9632;</span>
+<p>
     Illusions allow separating visual processing from visual consciousness, and open windows to processes involved in scene
     segmentation, perceptual grouping, Gestalt perception, and reveal prior knowledge. We use primarily bi-stable stimuli
     and attention to examine these processes.
@@ -43,7 +47,7 @@ multivariate classifiers and old-fashioned stats. Our research questions current
 
 <h2 id="natural-scenes-motion-and-space">Natural scenes, motion, and space</h2>
 
-<p><span class="square">&#9632;</span>
+<p>
     Natural scenes (such as feature movies) are fascinating: they contain most visual input our brain evolved in. We study
     the interpretation of high-level motion in movies, but also of people, objects, and space. Using controlled paradigms we
     examine how the brain integrates visual signals with body-related signals (efference copies of muscle-movements,
@@ -54,14 +58,14 @@ multivariate classifiers and old-fashioned stats. Our research questions current
 
 <h2 id="emotion-and-social-interaction">Emotion and social interaction</h2>
 
-<p><span class="square">&#9632;</span>
+<p>
     How do we recognise emotional inflections in facial motion, in body posture, or by observing people interact? We study
     how dynamic changes of facial expressions and body posture are processed, and how visual and affective brain regions
     exchange information.
 </p>
 
 <h2 id="methods">Methods</h2>
-
+<br>
 <b>Stimuli</b>
 
 <p>
