@@ -11,10 +11,6 @@ title: People
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lab Members</title>
     <style>
-        .square {
-            color: #ff5100; /* Orange-red color */
-            font-size: 1.5em;
-        }
         .member {
             text-align: center;
             margin: 20px;
@@ -32,6 +28,21 @@ title: People
             font-size: 1em;
             color: #777;
         }
+        h2 {
+        display: inline-block;
+        position: relative;
+        }
+
+        h2::after {
+            content: "";
+            display: block;
+            width: 80%;
+            height: 1px;
+            background-color: #ff5100;
+            position: absolute;
+            left: 10%;
+            bottom: -5px;
+        }
     </style>
 </head>
 <body>
@@ -39,17 +50,17 @@ title: People
     <div class="member">
         <img src="assets/images/lab_members_photos/andreas_bartels.jpg" alt="Member Photo">
         <h2>Prof. Dr. Andreas Bartels</h2>
-        <p><span class="square">&#9632;</span> Research interests: Cognitive neuroscience, visual perception, and brain imaging.</p>
+        <p>Research interests: Cognitive neuroscience, visual perception, and brain imaging.</p>
     </div>
     <div class="member">
         <img src="assets/images/lab_members_photos/pablo_grassi.jpg" alt="Member Photo">
         <h2>Dr. Pablo Grassi</h2>
-        <p><span class="square">&#9632;</span> Research interests: Computational modeling, machine learning, and neural networks.</p>
+        <p>Research interests: Computational modeling, machine learning, and neural networks.</p>
     </div>
     <div class="member">
         <img src="assets/images/lab_members_photos/michael_bannert.jpg" alt="Member Photo">
         <h2>Dr. Michael Bannert</h2>
-        <p><span class="square">&#9632;</span> Research interests: Behavioral experiments, attention, and memory.</p>
+        <p>Research interests: Behavioral experiments, attention, and memory.</p>
     </div>
 </body>
 </html>
